@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  /* Primary Colors */
+  --Soft-blue: hsl(215, 51%, 70%);
+  --Cyan: hsl(178, 100%, 50%);
+  /* Neutral Colors */
+  --main-BG: hsl(217, 54%, 11%);
+  --card-BG: hsl(216, 50%, 16%);
+  --line: hsl(215, 32%, 27%);
+  --White: hsl(0, 0%, 100%);
+}
+body {
+  font-family: "Outfit", sans-serif;
+  font-size: 1.13rem;
+  background-color: var(--main-BG);
+  color: var(--White);
+  padding: 1.25em;
+}
+#nftcard {
+  background-color: var(--card-BG);
+  padding: 1.25em;
+  width: 18em;
+  margin: auto;
+  margin-bottom: 2em;
+  border-radius: 0.63rem;
+}
+img {
+  max-width: 100%;
+}
+.activesate {
+  position: relative;
+  border: 0.13rem red solid;
+}
+.nft-item {
+  border-radius: 0.44rem;
+}
+
+.overlay2 {
+  position: absolute;
+  top: 0;
+  margin-top: 2.81rem;
+  background-color: hsl(178, 100%, 50%, 50%);
+  width: 15.45em;
+  height: 15.45em;
+  z-index: 999;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 0.44rem;
+}
+.overlay2:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+.overlay2 img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.nftTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 0.5em;
+}
+.nftTitle:hover {
+  color: var(--Cyan);
+}
+.nftDescription {
+  color: var(--Soft-blue);
+  font-weight: 400;
+  font-size: 1rem;
+  margin-top: 1em;
+}
+.priceDate {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1em;
+  padding-bottom: 1em;
+  align-items: center;
+  line-height: 1.5;
+  border-bottom: 0.13rem solid var(--line);
+}
+.Eth {
+  line-height: 0.63rem;
+  padding-bottom: 0.19rem;
+  vertical-align: text-bottom;
+  color: var(--Cyan);
+}
+.pricing {
+  color: var(--Cyan);
+}
+.clock {
+  line-height: 0.63rem;
+  vertical-align: text-bottom;
+  padding-bottom: 0.19rem;
+  color: var(--Soft-blue);
+}
+.date {
+  color: var(--Soft-blue);
+}
+.creator {
+  display: flex;
+  align-items: center;
+  text-indent: 0.4em;
+  margin-top: 1em;
+}
+.owner-image {
+  width: 20%;
+  border: 0.19rem solid var(--White);
+  border-radius: 50%;
+}
+.createdby {
+  color: var(--Soft-blue);
+}
+.creatorName:hover {
+  color: var(--Cyan);
+}
+.attribution {
+  font-size: 0.69rem;
+  text-align: center;
+  
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  text-transform: uppercase;
+}
